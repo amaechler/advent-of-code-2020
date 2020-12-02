@@ -1,9 +1,9 @@
-use crate::utilities::read;
+use crate::utilities::read_as_int64;
 use std::fs::File;
 
 pub fn run() {
     let input = File::open("./src/day1.txt")
-        .and_then(|file| read(file))
+        .and_then(|file| read_as_int64(file))
         .expect("failed to read input file");
 
     // part 1

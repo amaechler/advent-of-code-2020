@@ -1,6 +1,7 @@
 use std::env;
 
 mod day1;
+mod day2;
 mod utilities;
 
 fn help() {
@@ -26,6 +27,7 @@ fn main() {
             let day_to_run = &args[1];
             match day_to_run.as_str() {
                 "day1" => day1::run(),
+                "day2" => day2::run(),
                 x => println!("Unknown day '{0}'", x),
             }
         }
