@@ -2,6 +2,7 @@ use std::env;
 
 mod day1;
 mod day2;
+mod day3;
 mod utilities;
 
 fn help() {
@@ -28,6 +29,7 @@ fn main() {
             match day_to_run.as_str() {
                 "day1" => day1::run(),
                 "day2" => day2::run(),
+                "day3" => day3::run(),
                 x => println!("Unknown day '{0}'", x),
             }
         }
