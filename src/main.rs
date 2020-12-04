@@ -30,6 +30,16 @@ fn main() {
                 "day1" => day1::run(),
                 "day2" => day2::run(),
                 "day3" => day3::run(),
+                "all" => {
+                    println!("📅 Day 1");
+                    day1::run();
+
+                    println!("\n📅 Day 2");
+                    day2::run();
+
+                    println!("\n📅 Day 3");
+                    day3::run();
+                }
                 x => println!("Unknown day '{0}'", x),
             }
         }

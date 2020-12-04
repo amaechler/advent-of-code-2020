@@ -53,7 +53,7 @@ pub fn run() {
 
     println!("Number of trees encountered: {:?}", number_of_trees);
     println!(
-        "Number of trees multiplied: {:?}",
+        "Number of trees multiplied:  {:?}",
         number_of_trees
             .iter()
             .fold(1u64, |acc, val| acc * *val as u64)
