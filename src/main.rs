@@ -4,6 +4,7 @@ mod day1;
 mod day2;
 mod day3;
 mod day4;
+mod day5;
 mod utilities;
 
 fn help() {
@@ -32,6 +33,7 @@ fn main() {
                 "day2" => day2::run(),
                 "day3" => day3::run(),
                 "day4" => day4::run(),
+                "day5" => day5::run(),
                 "all" => {
                     println!("📅 Day 1");
                     day1::run();
@@ -44,6 +46,9 @@ fn main() {
 
                     println!("\n📅 Day 4");
                     day4::run();
+
+                    println!("\n📅 Day 5");
+                    day5::run();
                 }
                 x => println!("Unknown day '{0}'", x),
             }
