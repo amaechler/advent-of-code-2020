@@ -1,5 +1,7 @@
 # Advent of Code 2020
 
+![Rust workflow action](https://github.com/amaechler/advent-of-code-2020/workflows/Rust/badge.svg)
+
 ## Environment Setup
 
 ### Windows Subsystem for Linux 2
