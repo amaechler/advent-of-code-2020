@@ -3,6 +3,7 @@ use std::env;
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 mod utilities;
 
 fn help() {
@@ -30,6 +31,7 @@ fn main() {
                 "day1" => day1::run(),
                 "day2" => day2::run(),
                 "day3" => day3::run(),
+                "day4" => day4::run(),
                 "all" => {
                     println!("📅 Day 1");
                     day1::run();
@@ -39,6 +41,9 @@ fn main() {
 
                     println!("\n📅 Day 3");
                     day3::run();
+
+                    println!("\n📅 Day 4");
+                    day4::run();
                 }
                 x => println!("Unknown day '{0}'", x),
             }

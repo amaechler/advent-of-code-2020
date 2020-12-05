@@ -70,7 +70,7 @@ pub fn run() {
         })
         .count();
 
-    println!("Number of passwords total:     {0}", input.len());
+    println!("Number of passwords total: {0}", input.len());
     println!(
         "Number of passwords valid (1): {0}",
         number_of_passwords_valid
