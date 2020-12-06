@@ -53,11 +53,13 @@ pub fn run() {
         .map(|b| to_boarding_pass(&b))
         .collect::<Vec<BoardingPass>>();
 
-    for pass in &boarding_passes {
-        println!(
-            "{0}: row {1:>4}, column {2:>4}, seat ID {3:>4}",
-            pass.raw, pass.row, pass.column, pass.seat_id
-        );
+    if cfg!(debug_assertions) {
+        for pass in &boarding_passes {
+            println!(
+                "{0}: row {1:>4}, column {2:>4}, seat ID {3:>4}",
+                pass.raw, pass.row, pass.column, pass.seat_id
+            );
+        }
     }
 
     // part 1
